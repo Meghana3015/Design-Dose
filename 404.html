@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | The Design Dose</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-palette"></i>
+                <a href="index.html">The Design Dose</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#blogs">Blogs</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Section -->
+    <section class="error-404">
+        <div class="container">
+            <div class="error-content">
+                <div class="error-illustration">
+                    <div class="error-number">4<span class="palette-icon"><i class="fas fa-palette"></i></span>4</div>
+                </div>
+                <div class="error-text">
+                    <h1>Oops! Looks like this pixel wandered off</h1>
+                    <p>The page you're looking for seems to have taken a creative detour. Don't worry, even the best designs have a few misplaced elements sometimes!</p>
+                    <div class="error-suggestions">
+                        <h3>Let's get you back on track:</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i>Check if the URL is spelled correctly</li>
+                            <li><i class="fas fa-check"></i>Head back to our homepage</li>
+                            <li><i class="fas fa-check"></i>Browse our latest design articles</li>
+                            <li><i class="fas fa-check"></i>Search for something specific</li>
+                        </ul>
+                    </div>
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary">
+                            <i class="fas fa-home"></i>
+                            Back to Home
+                        </a>
+                        <a href="index.html#blogs" class="btn btn-outline">
+                            <i class="fas fa-book-open"></i>
+                            Browse Articles
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Quick Search -->
+            <div class="quick-search">
+                <h3>Or search for something specific:</h3>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for design topics, tools, or tips..." onkeypress="handleQuickSearch(event)">
+                </div>
+            </div>
+
+            <!-- Popular Articles -->
+            <div class="popular-articles">
+                <h3>Popular Articles</h3>
+                <div class="popular-grid">
+                    <div class="popular-card">
+                        <h4>10 Essential Figma Plugins for Designers</h4>
+                        <p>Boost your design workflow with these must-have Figma plugins.</p>
+                        <a href="blog.html?id=1">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="popular-card">
+                        <h4>Building Your First Design System</h4>
+                        <p>A step-by-step guide to creating scalable design systems.</p>
+                        <a href="blog.html?id=2">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="popular-card">
+                        <h4>UX Research Methods for Beginners</h4>
+                        <p>Essential research techniques every designer should know.</p>
+                        <a href="blog.html?id=3">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-palette"></i>
+                    <span>The Design Dose</span>
+                </div>
+                <div class="footer-text">
+                    <p>© 2025 The Design Dose. Crafted with ❤️ by Meghana</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-behance"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleQuickSearch(event) {
+            if (event.key === 'Enter') {
+                const query = event.target.value;
+                window.location.href = `index.html#blogs?search=${encodeURIComponent(query)}`;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Design Dose - Thoughts, tools & pixels by Meghana</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-palette"></i>
+                <span>The Design Dose</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- <div class="hero-logo">
+                    <i class="fas fa-palette"></i>
+                </div> -->
+                <h1 class="hero-title">The Design Dose</h1>
+                <p class="hero-subtitle" style="color:#102e76;">Thoughts, tools & pixels by Meghana</p>
+                <div class="hero-buttons">
+                    <!-- <button class="btn btn-primary" onclick="scrollToSection('blogs')">
+                        <i class="fas fa-book-open"></i>
+                        Explore Blogs
+                    </button> -->
+                    <button class="btn btn-secondary" onclick="scrollToSection('blogs')">
+                        Explore Blogs
+                        <i class="fas fa-book-open"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="author-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>About Meghana</h3>
+                    <p>Welcome to my creative space — a place where I share what I’m learning, building, and exploring as a UI/UX designer and front-end developer. 
+                        From real-world project insights to favorite design tools, this blog is a blend of thoughts, pixels, and stories from my design journey. 
+                        Whether you’re a student, creative enthusiast, or just curious about design — I hope you find value, inspiration, and a little spark here.</p>
+                    <a href="https://meghana-timmampalli.netlify.app" target="_blank" class="btn btn-outline">
+                        View Portfolio
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section id="blogs" class="blogs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Discover insights, tools, and inspiration for modern design</p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search by keywords, title, or tag...">
+                </div>
+            </div>
+
+            <!-- Category Filters -->
+            <div class="filters-container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="ux-design">UX Design</button>
+                    <button class="filter-btn" data-category="tools">Tools</button>
+                    <button class="filter-btn" data-category="case-studies">Case Studies</button>
+                    <button class="filter-btn" data-category="career">Career</button>
+                    <button class="filter-btn" data-category="productivity">Productivity</button>
+                </div>
+            </div>
+
+            <!-- Tag Filters -->
+            <div class="tag-filters">
+                <span class="tag-label">Popular Tags:</span>
+                <div class="tags-container">
+                    <button class="tag-btn" data-tag="figma">Figma</button>
+                    <button class="tag-btn" data-tag="adobe-xd">Adobe XD</button>
+                    <button class="tag-btn" data-tag="design-system">Design System</button>
+                    <button class="tag-btn" data-tag="portfolio">Portfolio</button>
+                    <button class="tag-btn" data-tag="user-research">User Research</button>
+                    <button class="tag-btn" data-tag="prototyping">Prototyping</button>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog cards will be populated by JavaScript -->
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container">
+                <button class="btn btn-outline" id="loadMoreBtn">
+                    Load More Articles
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text">
+                    <h2>Get UI/UX tips, tools & insights in your inbox</h2>
+                    <p>Join 1000+ designers who receive weekly updates on design trends, tools, and career advice.</p>
+                </div>
+                <div class="cta-form">
+                    <form id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email address" required>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Let's Work Together</h2>
+                    <p>Ready to create something amazing? I'm always excited to work on new projects and collaborate with passionate teams.</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/meghana-timmampalli/" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            Connect on LinkedIn
+                        </a>
+                        <a href="mailto: meghanatimmampalli30@gmail.com" target="_blank" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </a>
+                        <a href="https://www.behance.net/meghanatimmamp" target="_blank" class="contact-link">
+                            <i class="fab fa-behance"></i>
+                            View on Behance
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Project Type (e.g., Website Design, App UI)">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell me about your project..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-palette"></i>
+                    <span>The Design Dose</span>
+                </div>
+                <div class="footer-text">
+                    <p>© 2025 The Design Dose. Crafted by Meghana</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/meghana-timmampalli/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/meghanatimmamp" target="_blank"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.github.com/Meghana3015" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
