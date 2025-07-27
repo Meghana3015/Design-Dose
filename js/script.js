@@ -9,7 +9,7 @@ let blogsData = [
         date: "2025-01-15",
         readTime: "8 min read",
         image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
-        url: "blog-1.html"
+        url: "blogs/blog-1.html"
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ let blogsData = [
         date: "2025-01-12",
         readTime: "12 min read",
         image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
-        url: "blog-2.html"
+        url: "blogs/blog-2.html"
     },
     {
         id: 3,
@@ -31,7 +31,7 @@ let blogsData = [
         date: "2025-01-10",
         readTime: "10 min read",
         image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800",
-        url: "blog-3.html"
+        url: "blogs/blog-3.html"
     },
     // {
     //     id: 4,
@@ -42,7 +42,7 @@ let blogsData = [
     //     date: "2025-01-08",
     //     readTime: "15 min read",
     //     image: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800",
-    //     url: "blog-4.html"
+    //     url: "blogs/blog-4.html"
     // },
     // {
     //     id: 5,
@@ -53,7 +53,7 @@ let blogsData = [
     //     date: "2025-01-05",
     //     readTime: "11 min read",
     //     image: "https://images.pexels.com/photos/4050290/pexels-photo-4050290.jpeg?auto=compress&cs=tinysrgb&w=800",
-    //     url: "blog-5.html"
+    //     url: "blogs/blog-5.html"
     // },
     // {
     //     id: 6,
@@ -64,7 +64,7 @@ let blogsData = [
     //     date: "2025-01-03",
     //     readTime: "18 min read",
     //     image: "https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800",
-    //     url: "blog-6.html"
+    //     url: "blogs/blog-6.html"
     // }
 ];
 let filteredBlogs = [...blogsData];

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Your First Design System: A Complete Guide - The Design Dose</title>
-    <link rel="stylesheet" href="style.css">
+    <title>10 Essential Figma Plugins Every Designer Should Use - The Design Dose</title>
+    <link rel="stylesheet" href="style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css">
@@ -44,9 +44,9 @@
                 </div>
                 <div class="blog-hero">
                     <div class="blog-categories">
-                        <span class="blog-category">UX DESIGN</span>
+                        <span class="blog-category">TOOLS</span>
                     </div>
-                    <h1>Building Your First Design System: A Complete Guide</h1>
+                    <h1>10 Essential Figma Plugins Every Designer Should Use</h1>
                     <div class="blog-info">
                         <div class="author-info">
                             <!-- <div class="author-avatar">
@@ -58,9 +58,9 @@
                             </div>
                         </div>
                         <div class="blog-metadata">
-                            <span>January 12, 2025</span>
+                            <span>January 15, 2025</span>
                             <span class="separator">•</span>
-                            <span>12 min read</span>
+                            <span>8 min read</span>
                         </div>
                     </div>
                 </div>
@@ -70,7 +70,7 @@
         <!-- Blog Cover Image -->
         <div class="blog-cover">
             <div class="container">
-                <img src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Building Your First Design System: A Complete Guide" />
+                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="10 Essential Figma Plugins Every Designer Should Use" />
             </div>
         </div>
 
@@ -79,39 +79,47 @@
             <div class="container">
                 <div class="content-wrapper">
                     <div class="blog-body">
-                        <h2>What is a Design System?</h2>
-                        <p>A design system is more than just a style guide or component library. It's a collection of reusable components, guided by clear standards, that can be assembled together to build applications.</p>
+                        <h2>Why Figma Plugins Matter</h2>
+                        <p>Figma plugins have revolutionized the way designers work, offering powerful tools to automate repetitive tasks and enhance creativity. In this comprehensive guide, we'll explore the top 10 plugins that every designer should have in their toolkit.</p>
                         
-                        <h3>Core Components of a Design System</h3>
-                        <p>Every successful design system includes these fundamental elements:</p>
-                        
-                        <h4>1. Design Tokens</h4>
-                        <p>The smallest units of your design language. Colors, typography, spacing, and other visual properties that define your brand.</p>
-                        
-                        <h4>2. Component Library</h4>
-                        <p>Reusable UI components like buttons, forms, navigation elements, and more complex patterns.</p>
-                        
-                        <h4>3. Documentation</h4>
-                        <p>Clear guidelines on when and how to use each component, including do's and don'ts.</p>
+                        <h3>1. Auto Layout</h3>
+                        <p>Auto Layout is a game-changer for responsive design. It automatically adjusts spacing and sizing, making your designs more flexible and maintainable.</p>
                         
                         <blockquote>
-                        "A design system isn't a project, it's a product serving products." - Nathan Curtis
+                        "Auto Layout has saved me countless hours in my design process. It's like having a smart assistant that knows exactly how to organize your elements." - Sarah, Senior UX Designer
                         </blockquote>
                         
-                        <h2>Building Your Design System</h2>
-                        <p>Start small and grow organically. Begin with your most commonly used components and gradually expand based on team needs.</p>
+                        <h3>2. Content Reel</h3>
+                        <p>Generate realistic content for your designs with this powerful plugin. From profile pictures to product descriptions, Content Reel has everything you need.</p>
                         
-                        <h3>Step 1: Audit Your Current Designs</h3>
-                        <p>Take inventory of existing patterns and components across your product. Look for inconsistencies and opportunities for standardization.</p>
+                        <h3>3. Unsplash</h3>
+                        <p>Access millions of high-quality photos directly within Figma. Perfect for mockups, presentations, and design inspiration.</p>
                         
-                        <h3>Step 2: Define Your Design Tokens</h3>
-                        <p>Establish your foundational elements like color palettes, typography scales, spacing systems, and elevation levels.</p>
+                        <h2>Advanced Workflow Tips</h2>
+                        <p>To get the most out of these plugins, consider creating a standardized workflow. Start with Auto Layout for your base components, then use Content Reel to populate with realistic data, and finally enhance with Unsplash imagery.</p>
                         
-                        <h3>Step 3: Create Core Components</h3>
-                        <p>Build your most essential components first: buttons, inputs, typography, and basic layout elements.</p>
+                        <pre><code>// Example Figma plugin code structure
+figma.showUI(__html__, { width: 400, height: 300 });
+
+figma.ui.onmessage = msg => {
+  if (msg.type === 'create-shapes') {
+    const nodes = [];
+    
+    for (let i = 0; i < msg.count; i++) {
+      const rect = figma.createRectangle();
+      rect.x = i * 150;
+      rect.fills = [{type: 'SOLID', color: {r: 1, g: 0.5, b: 0}}];
+      figma.currentPage.appendChild(rect);
+      nodes.push(rect);
+    }
+    
+    figma.currentPage.selection = nodes;
+    figma.viewport.scrollAndZoomIntoView(nodes);
+  }
+};</code></pre>
                         
-                        <h2>Tools and Best Practices</h2>
-                        <p>Popular tools for building design systems include Figma, Sketch, Adobe XD for design, and Storybook, Zeroheight for documentation.</p>
+                        <h3>Key Takeaways</h3>
+                        <p>These plugins aren't just time-savers; they're creativity enhancers. By automating the mundane, they free you up to focus on what really matters: creating exceptional user experiences.</p>
                     </div>
 
                     <!-- Share Buttons -->
@@ -141,9 +149,9 @@
                     <div class="blog-tags">
                         <h3>Tags</h3>
                         <div class="blog-tags">
-                            <span class="blog-tag">design-system</span>
                             <span class="blog-tag">figma</span>
-                            <span class="blog-tag">user-research</span>
+                            <span class="blog-tag">design-system</span>
+                            <span class="blog-tag">productivity</span>
                         </div>
                     </div>
                 </div>
@@ -179,13 +187,13 @@
         <div class="blog-navigation">
             <div class="container">
                 <div class="nav-links">
-                    <div class="nav-link prev" onclick="window.location.href='blog-1.html'">
+                    <div class="nav-link prev" style="opacity: 0.5; cursor: not-allowed;">
                         <span class="nav-label">Previous Post</span>
-                        <span class="nav-title">10 Essential Figma Plugins Every Designer Should Use</span>
+                        <span class="nav-title">No previous post</span>
                     </div>
-                    <div class="nav-link next" onclick="window.location.href='blog-3.html'">
+                    <div class="nav-link next" onclick="window.location.href='blog-2.html'">
                         <span class="nav-label">Next Post</span>
-                        <span class="nav-title">UX Research Methods Every Designer Should Know</span>
+                        <span class="nav-title">Building Your First Design System: A Complete Guide</span>
                     </div>
                 </div>
             </div>
@@ -197,18 +205,18 @@
         <div class="container">
             <h2>You might also like</h2>
             <div class="related-grid">
-                <article class="blog-card" onclick="window.location.href='blog-1.html'">
+                <article class="blog-card" onclick="window.location.href='blog-2.html'">
                     <div class="blog-image">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-user"></i>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-category">TOOLS</span>
+                            <span class="blog-category">UX DESIGN</span>
                             <span>•</span>
-                            <span>8 min read</span>
+                            <span>12 min read</span>
                         </div>
-                        <h3 class="blog-title">10 Essential Figma Plugins Every Designer Should Use</h3>
-                        <p class="blog-excerpt">Discover the must-have Figma plugins that will supercharge your design workflow and boost productivity.</p>
+                        <h3 class="blog-title">Building Your First Design System: A Complete Guide</h3>
+                        <p class="blog-excerpt">Learn how to create scalable design systems that grow with your product and team.</p>
                     </div>
                 </article>
                 <article class="blog-card" onclick="window.location.href='blog-3.html'">
@@ -225,18 +233,18 @@
                         <p class="blog-excerpt">Master the essential research techniques that will make your designs more user-centered and effective.</p>
                     </div>
                 </article>
-                <!-- <article class="blog-card" onclick="window.location.href='blog-6.html'">
+                <!-- <article class="blog-card" onclick="window.location.href='blog-4.html'">
                     <div class="blog-image">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="blog-content">
                         <div class="blog-meta">
-                            <span class="blog-category">CASE STUDIES</span>
+                            <span class="blog-category">CAREER</span>
                             <span>•</span>
-                            <span>18 min read</span>
+                            <span>15 min read</span>
                         </div>
-                        <h3 class="blog-title">Design System Case Study: Scaling Design at TechCorp</h3>
-                        <p class="blog-excerpt">How we built and scaled a design system across 15 product teams and 3 platforms.</p>
+                        <h3 class="blog-title">Career Growth Tips for UX Designers in 2025</h3>
+                        <p class="blog-excerpt">Navigate your design career with confidence. From junior to senior designer and beyond.</p>
                     </div>
                 </article> -->
             </div>
@@ -291,21 +299,21 @@
         // Share functions
         function shareOnLinkedIn() {
             const url = encodeURIComponent(window.location.href);
-            const title = encodeURIComponent('Building Your First Design System: A Complete Guide');
-            const text = encodeURIComponent('Learn how to create scalable design systems that grow with your product and team.');
+            const title = encodeURIComponent('10 Essential Figma Plugins Every Designer Should Use');
+            const text = encodeURIComponent('Discover the must-have Figma plugins that will supercharge your design workflow and boost productivity.');
             
             window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&title=${title}&summary=${text}`, '_blank');
         }
 
         function shareOnTwitter() {
             const url = encodeURIComponent(window.location.href);
-            const text = encodeURIComponent('Building Your First Design System: A Complete Guide - Learn how to create scalable design systems that grow with your product and team.');
+            const text = encodeURIComponent('10 Essential Figma Plugins Every Designer Should Use - Discover the must-have Figma plugins that will supercharge your design workflow and boost productivity.');
             
             window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
         }
 
         function shareOnWhatsApp() {
-            const text = encodeURIComponent('Building Your First Design System: A Complete Guide - Learn how to create scalable design systems that grow with your product and team. ' + window.location.href);
+            const text = encodeURIComponent('10 Essential Figma Plugins Every Designer Should Use - Discover the must-have Figma plugins that will supercharge your design workflow and boost productivity. ' + window.location.href);
             
             window.open(`https://wa.me/?text=${text}`, '_blank');
         }
