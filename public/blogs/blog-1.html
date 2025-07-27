@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>10 Essential Figma Plugins Every Designer Should Use - The Design Dose</title>
+    <title>Designing for Developers</title>
     <link rel="stylesheet" href="style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -46,7 +46,7 @@
                     <div class="blog-categories">
                         <span class="blog-category">TOOLS</span>
                     </div>
-                    <h1>10 Essential Figma Plugins Every Designer Should Use</h1>
+                    <h1>Designing for Developers: My Take as a Developer-Designer</h1>
                     <div class="blog-info">
                         <div class="author-info">
                             <!-- <div class="author-avatar">
@@ -58,9 +58,9 @@
                             </div>
                         </div>
                         <div class="blog-metadata">
-                            <span>January 15, 2025</span>
+                            <span>June 15, 2025</span>
                             <span class="separator">•</span>
-                            <span>8 min read</span>
+                            <span>6 min read</span>
                         </div>
                     </div>
                 </div>
@@ -70,110 +70,105 @@
         <!-- Blog Cover Image -->
         <div class="blog-cover">
             <div class="container">
-                <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800" alt="10 Essential Figma Plugins Every Designer Should Use" />
+                <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="10 Essential Figma Plugins Every Designer Should Use" />
             </div>
         </div>
 
         <!-- Blog Content -->
-        <div class="blog-content">
-            <div class="container">
-                <div class="content-wrapper">
-                    <div class="blog-body">
-                        <h2>Why Figma Plugins Matter</h2>
-                        <p>Figma plugins have revolutionized the way designers work, offering powerful tools to automate repetitive tasks and enhance creativity. In this comprehensive guide, we'll explore the top 10 plugins that every designer should have in their toolkit.</p>
-                        
-                        <h3>1. Auto Layout</h3>
-                        <p>Auto Layout is a game-changer for responsive design. It automatically adjusts spacing and sizing, making your designs more flexible and maintainable.</p>
-                        
-                        <blockquote>
-                        "Auto Layout has saved me countless hours in my design process. It's like having a smart assistant that knows exactly how to organize your elements." - Sarah, Senior UX Designer
-                        </blockquote>
-                        
-                        <h3>2. Content Reel</h3>
-                        <p>Generate realistic content for your designs with this powerful plugin. From profile pictures to product descriptions, Content Reel has everything you need.</p>
-                        
-                        <h3>3. Unsplash</h3>
-                        <p>Access millions of high-quality photos directly within Figma. Perfect for mockups, presentations, and design inspiration.</p>
-                        
-                        <h2>Advanced Workflow Tips</h2>
-                        <p>To get the most out of these plugins, consider creating a standardized workflow. Start with Auto Layout for your base components, then use Content Reel to populate with realistic data, and finally enhance with Unsplash imagery.</p>
-                        
-                        <pre><code>// Example Figma plugin code structure
-figma.showUI(__html__, { width: 400, height: 300 });
+<div class="blog-content">
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="blog-body">
+                <p>Bridging the gap between design and development is something I’ve personally experienced—and deeply care about. As someone who wears both hats, I’ve learned that the best user experiences aren’t just about how things look, but how seamlessly they work for everyone involved, including developers. This blog shares my insights on creating designs that developers love to implement, and how a developer-designer mindset changes the whole game.</p>
+                
+                <h3>1. Recognizing Developer Pain Points</h3>
+                <p>Designs that appear polished visually can still cause difficulties during implementation. Common issues include inconsistent spacing, non-reusable components, overly complex interactions, or layouts that don’t adapt well to different screen sizes.</p>
+                <p>Developers often spend additional time restructuring such designs to make them work technically. Recognizing these recurring friction points allows for the creation of cleaner, more developer-friendly interfaces.</p>
+                
+                <h3>2. Designing with Constraints in Mind</h3>
+                <p>Technical constraints—like browser compatibility, responsive behavior, accessibility standards, or limited framework capabilities—are often overlooked during the initial design phase.</p>
+                <p>By designing within these boundaries, interfaces become not only visually appealing but also feasible to implement. Emphasizing systems thinking, scalable spacing units (<code>rem</code>, <code>em</code>), flexible grid structures, and modular components can significantly ease the development process.</p>
+                
+                <blockquote>
+                    “A good design is not just usable for users—it's also usable for developers who bring it to life.” - Commonly echoed sentiment among cross-functional teams
+                </blockquote>
+                
+                <h3>3. Leveraging Developer-Centric Design Tools</h3>
+                <p>Certain tools and practices have emerged that specifically enhance the design-to-development pipeline:</p>
+                <ul>
+                    <li><strong>Figma’s Auto Layout</strong>: Reflects real-world CSS behavior, making handoffs more predictable.</li>
+                    <li><strong>Design Tokens</strong>: Help maintain consistent values (e.g., spacing, color, typography) across code and design files.</li>
+                    <li><strong>Storybook or Component Libraries</strong>: Aid in visualizing and testing UI components in isolation, encouraging reusability.</li>
+                </ul>
+                <p>When these tools are used strategically, they bridge the semantic and structural gap between design and code.</p>
+                
+                <h3>4. Encouraging Early Collaboration</h3>
+                <p>Effective collaboration begins before the design is finalized. Bringing developers into the design process early allows for technical feasibility checks, alternative suggestions, and proactive problem-solving.</p>
+                <p>For example, feedback about animation limitations or component reuse potential can shape better-informed design decisions. Early alignment reduces back-and-forth during implementation and leads to a smoother workflow.</p>
+                
+                <h3>5. Handoff Is Just a Transition, Not an Endpoint</h3>
+                <p>Design handoff should be seen as a continuation of collaboration—not a final deliverable. Providing detailed annotations, naming layers meaningfully, and specifying interaction behavior help streamline the transition from design to code.</p>
+                <p>Designers who remain involved during the implementation phase can help troubleshoot, refine, and ensure that the final outcome matches the original intent without unnecessary complexity.</p>
 
-figma.ui.onmessage = msg => {
-  if (msg.type === 'create-shapes') {
-    const nodes = [];
-    
-    for (let i = 0; i < msg.count; i++) {
-      const rect = figma.createRectangle();
-      rect.x = i * 150;
-      rect.fills = [{type: 'SOLID', color: {r: 1, g: 0.5, b: 0}}];
-      figma.currentPage.appendChild(rect);
-      nodes.push(rect);
-    }
-    
-    figma.currentPage.selection = nodes;
-    figma.viewport.scrollAndZoomIntoView(nodes);
-  }
-};</code></pre>
-                        
-                        <h3>Key Takeaways</h3>
-                        <p>These plugins aren't just time-savers; they're creativity enhancers. By automating the mundane, they free you up to focus on what really matters: creating exceptional user experiences.</p>
-                    </div>
+                <h3>Key Takeaways</h3>
+                <ul>
+                    <li>Understanding developer challenges leads to more practical, scalable design decisions.</li>
+                    <li>Designing within technical constraints improves development speed and consistency.</li>
+                    <li>Tools like Auto Layout and Design Tokens support alignment between design and code.</li>
+                    <li>Early collaboration fosters clarity, while ongoing involvement ensures design integrity during implementation.</li>
+                </ul>
+                <p>By focusing on how design decisions impact the development process, teams can create solutions that are not only beautiful and usable but also efficient to build and maintain.</p>
+            </div>
 
-                    <!-- Share Buttons -->
-                    <div class="share-section">
-                        <h3>Share this article</h3>
-                        <div class="share-buttons">
-                            <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
-                                <i class="fab fa-linkedin"></i>
-                                LinkedIn
-                            </button>
-                            <button class="share-btn twitter" onclick="shareOnTwitter()">
-                                <i class="fab fa-twitter"></i>
-                                Twitter
-                            </button>
-                            <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">
-                                <i class="fab fa-whatsapp"></i>
-                                WhatsApp
-                            </button>
-                            <button class="share-btn copy" onclick="copyLink()">
-                                <i class="fas fa-link"></i>
-                                Copy Link
-                            </button>
-                        </div>
-                    </div>
+            <!-- Share Buttons -->
+            <div class="share-section">
+                <h3>Share this article</h3>
+                <div class="share-buttons">
+                    <button class="share-btn linkedin" onclick="shareOnLinkedIn()">
+                        <i class="fab fa-linkedin"></i>
+                        LinkedIn
+                    </button>
+                    <button class="share-btn whatsapp" onclick="shareOnWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </button>
+                    <button class="share-btn copy" onclick="copyLink()">
+                        <i class="fas fa-link"></i>
+                        Copy Link
+                    </button>
+                </div>
+            </div>
 
-                    <!-- Tags -->
-                    <div class="blog-tags">
-                        <h3>Tags</h3>
-                        <div class="blog-tags">
-                            <span class="blog-tag">figma</span>
-                            <span class="blog-tag">design-system</span>
-                            <span class="blog-tag">productivity</span>
-                        </div>
-                    </div>
+            <!-- Tags -->
+            <div class="blog-tags">
+                <h3>Tags</h3>
+                <div class="blog-tags">
+                    <span class="blog-tag">figma</span>
+                    <span class="blog-tag">design-system</span>
+                    <span class="blog-tag">productivity</span>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 
         <!-- Author Bio -->
         <div class="author-bio">
             <div class="container">
                 <div class="author-card">
                     <div class="author-avatar-large">
-                        <i class="fas fa-user-circle"></i>
+                        <iimg src="/assets/Meghana.png" alt="Meghana Timmampalli" class="author-avatar1">
                     </div>
                     <div class="author-content">
                         <h3>About Meghana</h3>
                         <p>UI/UX Designer passionate about creating meaningful digital experiences. I help teams build products that users love through research-driven design and thoughtful interactions.</p>
                         <div class="author-links">
-                            <a href="#" class="btn btn-outline">
+                            <a href="https://meghana-timmampalli.netlify.app/" target="_blank" class="btn btn-outline">
                                 <i class="fas fa-external-link-alt"></i>
                                 Portfolio
                             </a>
-                            <a href="#" class="btn btn-primary">
+                            <a href="https://linkedin.com/in/meghana-timmampalli" target="_blank" class="btn btn-primary">
                                 <i class="fab fa-linkedin"></i>
                                 Connect
                             </a>
@@ -286,10 +281,9 @@ figma.ui.onmessage = msg => {
                     <p>© 2025 The Design Dose. Crafted with ❤️ by Meghana</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-behance"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://linkedin.com/in/meghana-timmampalli"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/meghanatimmamp"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Meghana3015"><i class="fab fa-behance"></i></a>
                 </div>
             </div>
         </div>

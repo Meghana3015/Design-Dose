@@ -10,23 +10,24 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-palette"></i>
-                <span>The Design Dose</span>
-            </div>
-            <div class="nav-menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#contact">Contact</a>
-            </div>
-            <div class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <i class="fas fa-palette"></i>
+      <span>The Design Dose</span>
+    </div>
+    <div class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+</nav>
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -57,7 +58,7 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="author-avatar">
-                        <i class="fas fa-user-circle"></i>
+                        <img src="/assets/Meghana.png" alt="Meghana Timmampalli" class="author-avatar1">
                     </div>
                 </div>
                 <div class="about-text">
@@ -230,9 +231,9 @@ let blogsData = [
         excerpt: "Bridging the gap between design and development through real-world collaboration.",
         category: "tools",
         tags: ["figma", "design-system", "productivity"],
-        date: "2025-01-15",
-        readTime: "8 min read",
-        image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
+        date: "15-06-2025",
+        readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         url: "/blogs/blog-1.html"
     },
     {
@@ -240,10 +241,10 @@ let blogsData = [
         title: "What I Learned from Designing Real Projects",
         excerpt: "Insights from working on live college and client projects that shaped my UI/UX journey.",
         category: "ux-design",
-        tags: ["design-system", "figma", "user-research"],
-        date: "2025-01-12",
-        readTime: "12 min read",
-        image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
+        tags: ["ux-workflow", "design-principles","collaboration"],
+        date: "29-06-2025",
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         url: "/blogs/blog-2.html"
     },
     {
@@ -251,10 +252,15 @@ let blogsData = [
         title: "My Favorite Free Tools for UI/UX Design (as a Student Designer)",
         excerpt: "The essential tools every beginner designer should explore — all free and beginner-friendly.",
         category: "ux-design",
-        tags: ["user-research", "prototyping", "figma"],
-        date: "2025-01-10",
-        readTime: "10 min read",
-        image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800",
+        tags: ["tools", "free-resources", "student-design", "figma"],
+        date: "13-07-2025",
+        readTime: "6 min read",
+        image:"https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        // image:"https://unsplash.com/photos/a-computer-screen-with-a-keyboard-and-a-mouse-xJzr0NeT4Ec",
+        // image:"https://unsplash.com/photos/a-pink-and-orange-cell-phone-sitting-on-top-of-a-table-2gn2s6OfupM",
+        // image:"https://unsplash.com/photos/a-computer-screen-with-a-bunch-of-app-icons-on-it-ouQi7XpYy5U",
+        // image: "https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800",
+        // image: "https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800",
         url: "/blogs/blog-3.html"
     },
     // {
@@ -500,6 +506,16 @@ blogsData.forEach(blog => {
     </div>
   `;
 });
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.getElementById("navToggle");
+    const navMenu = document.getElementById("navMenu");
+
+    navToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("active");
+    });
+  });
+
+
     </script>
     <script src="/scripts/main.js" defer></script>
     <script src="/scripts/counter.js" defer></script>
