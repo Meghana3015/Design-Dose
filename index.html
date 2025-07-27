@@ -326,7 +326,7 @@ function displayBlogs() {
                 <div class="blog-tags">
                     ${blog.tags.map(tag => `<span class="blog-tag">${tag}</span>`).join('')}
                 </div>
-                <a href="#" class="read-more">
+                <a href="${blog.url}" class="read-more">
                     Read More <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
