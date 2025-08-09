@@ -897,9 +897,11 @@ p {
 .share-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: 10px 20px;
     border: none;
+    width: 124px;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
@@ -1208,6 +1210,9 @@ p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar{
+        height: 74px;
+    }
     .nav-menu {
         display: none;
     }
@@ -1427,4 +1432,7 @@ p {
     .palette-icon {
         font-size: 4rem;
     }
+}
+ul{
+    padding: 0 20px;
 }
